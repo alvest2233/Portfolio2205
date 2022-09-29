@@ -1,0 +1,175 @@
+<html lang="en">
+    <head>
+        <title>Tiago Alves' Portfolio</title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Sets font, margin and background color of webpage*/
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: darkcyan
+}
+
+/* Sets scale and position of "hero image", and sources background image */
+.hero-image {
+  height: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("coding.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Sets scale, position, alignment and color of text over hero image*/
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* Sets scale, shape, position, color, and cursor interaction with button on hero image*/
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Changes color of hero button when mouse hovers over it*/
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* Sets color for main text elements*/
+h1, h2, p, label{
+    color: white;
+    text-align: center;
+}
+/* Sets color and makes sure navigation bar text never clips outside of the bar*/
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: darkcyan;
+  color: white;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+
+
+</style>
+    </head>
+    <script src=""></script>
+        <body>
+            <div class="topnav">
+                <a class="active" href="index.html">Home</a>
+                <a href="contactme.html">Contact</a>
+                <a href="aboutme.html">About</a>
+              </div>
+
+            <div class="hero-image">
+                <div class="hero-text">
+                  <h1>I am Tiago Alves</h1>
+                  <p>2nd Year Software Engineering Student, Western University</p>
+                  <form action="http://linkedin.com/in/tiago-alves-a02b10230">
+                  <button>Hire me</button>
+                </form>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <img src="hackathons.jpg" alt="Jane" style="width:100%">
+                    <div class="container">
+                      <h2>Hackathons</h2>
+                      <p class="title">Check out my hackathon projects and project results.</p>
+                      <form action="https://devpost.com/alvest2233">
+                        <p><button class="button">Check them out!</button></p>
+                      </form>   
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="column">
+                  <div class="card">
+                    <img src="coding2.jpg"alt="Mike" style="width:100%">
+                    <div class="container">
+                      <h2>Coding</h2>
+                      <p class="title">Check out my github repositories:</p>
+                      <form action="https://github.com/alvest2233">
+                      <p><button class="button">Check them out!</button></p>
+                    </form>                    
+                    </div>
+                  </div>
+                </div>
+              
+
+
+                <div class="column">
+                  <div class="card">
+                    <img src="contact.jpg" alt="John" style="width:100%">
+                    <div class="container">
+                      <h2>Contact Me</h2>
+                      <p class="title">Feel free to reach out professionally!</p>
+                      <form action="contactme.html">
+                        <p><button class="button">Contact Me</button></p>
+                      </form>     
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            
+
+
+
+
+        </body>
+</html>
